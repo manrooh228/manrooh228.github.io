@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Thom Yorke</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='main.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <h1>Task 2</h1>
+        </div>
+
+        <nav>
+            <div class="menu">
+            <a href="../index.html">Task1</a> 
+            <a href="exercise1.html">Task2</a>
+            <a style="color: blue;"><b>Task3</b></a>
+            </div>
+        </nav>
+
+        <div class="main">
+            <table>
+                <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                </tr>
+                <tr>
+                <td rowspan="2">Maksat</td>
+                <td>Math</td>
+                <td>A</td>
+                </tr>
+                <tr>
+                <td>Science</td>
+                <td>B+</td>
+                </tr>
+                <tr class="highlight-row">
+                <td>Nurik</td>
+                <td colspan="2">Excellent in English (A+)</td>
+                </tr>
+                <tr>
+                <td>Ibragim</td>
+                <td>History</td>
+                <td>B</td>
+                </tr>
+            </table>
+
+
+
+            <div class="form-container">
+                <h2 style="text-align:center;">Feedback Form</h2>
+                <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="questions">
+                    <label>Are you satisfied?</label>
+                    <input class="yesno" type="radio" id="yes" name="satisfaction" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="satisfaction" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>My website, for course Web Technologies</h3>
+        </div>
+    </div>
+</body>
+</html>

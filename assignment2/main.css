@@ -1,0 +1,174 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "name name"
+    "header header"
+    "content content"
+    "footer footer";
+    grid-template-columns: 1.2fr 7.8fr;
+}
+
+.name {
+    grid-area: name;
+    color: aliceblue;
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+nav {
+    grid-area: header;
+    width: inherit;
+    display: absolute;
+    border: 5px solid darkslategrey;
+    padding: 15px;
+}
+
+nav .menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+nav .menu a{
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main {
+    grid-area: content;
+    gap: 0px;
+    padding: 3%;
+    
+    /* border-right: 5px solid cadetblue; */
+}
+
+/* MAIN */
+
+.main .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .wrapper .photo {
+    display: flex;
+    justify-content: center;
+}
+
+.main .wrapper .info {
+    display: Absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .wrapper .achieve {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color: aliceblue;
+    background-color: darkslategrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EXERCISE 3 */
+
+table {
+    width: 70%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+.highlight-row {
+    background-color: lightblue;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+#submit-btn {
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+}
+
+.questions input {
+    width: 20px;
+    margin-top: 10px;
+}
