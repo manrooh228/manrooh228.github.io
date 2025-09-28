@@ -1,0 +1,110 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+    h1 { text-align: center; }
+    /* ------------------ PART 1: FLEXBOX ------------------ */
+    /* Task 0 - Navigation Bar */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: #222;
+        color: white;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+    nav a { color: white; text-decoration: none; }
+
+    /* Task 1 - Card Row */
+    .card-container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .card {
+        background: #f5f5f5;
+        padding: 15px;
+        width: 250px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: transform 0.3s;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; border-radius: 5px; }
+    .card button { margin-top: auto; padding: 10px; background: #222; color: white; border: none; cursor: pointer; }
+
+    /* ------------------ PART 2: GRID ------------------ */
+
+    /* Task 2 - Page Layout with Grid Areas */
+    .grid-layout {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 400px;
+        margin: 20px;
+        border: 2px solid #ddd;
+    }
+    .grid-header { grid-area: header; background: #444; color: white; padding: 10px; }
+    .grid-sidebar { grid-area: sidebar; background: #eee; padding: 10px; }
+    .grid-main { grid-area: main; padding: 10px; }
+    .grid-footer { grid-area: footer; background: #444; color: white; padding: 10px; }
+
+    /* Task 3 - Image Gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        border-radius: 5px;
+        transition: opacity 0.3s;
+    }
+    .gallery img:hover { opacity: 0.7; }
+
+    /* ------------------ PART 3: COMBINED ------------------ */
+
+    .portfolio {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 600px;
+    }
+    .portfolio-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #222;
+        color: white;
+        padding: 15px;
+    }
+    .portfolio-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    .project-card {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 10px 10px 6px rgba(0,0,0,0.2);
+    }
+    .portfolio-footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
